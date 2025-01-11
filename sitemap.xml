@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9">
     <!-- صفحه اصلی -->
     <url>
-        <loc>https://www.pedramgordi.com/</loc>
+        <loc>https://pedramgordi.com/</loc>
         <lastmod>2025-01-07</lastmod>
         <priority>1.0</priority>
     </url>
