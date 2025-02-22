@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="hPqoQ0GjWBa-aspNmvW4-RKb1LFtWqzNyjVDUEbEWjE" />
-    <link rel="sitemap" type="application/xml" href="https://pedramgordi.com/sitemap.xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="hPqoQ0GjWBa-aspNmvW4-RKb1LFtWqzNyjVDUEbEWjE">
-    <meta name="description" content=" , سایت آشپزی ایتالیایی، دستور پخت غذاهای سنتی و خوشمزه ایتالیایی. پاستا، پیتزا،پتزا ناپولیتن , اموزش پیتزا , بیگا , پولیش , مارگاریتا , فتوچینی , پاستا فرش , ایتالیا، پاستا فیلینگ دار , تورتلینی , راویولی , کاپولوتی , انیولوتی , برزاولا , پورشیتو , بوراتا، موتزارلا , ریکوتا , ساسیج , براتن , چوریتسو , شف  پدارم گردی , پدرام گردی , سراشپز پدرام گردی , پدرام , تیم راه اندازی , ایتالین ساسیج , سایر غذاهای لذیذ ایتالیایی.">
+    <meta name="description" content=" , سایت آشپزی ایتالیایی، دستور پخت غذاهای سنتی و خوشمزه ایتالیایی. پاستا، پیتزا، پتزا ناپولیتن , اموزش پیتزا , بیگا , پولیش , مارگاریتا , فتوچینی , پاستا فرش , ایتالیا، پاستا فیلینگ دار , تورتلینی , راویولی , کاپولوتی , انیولوتی , برزاولا , پورشیتو , بوراتا، موتزارلا , ریکوتا , ساسیج , براتن , چوریتسو , شف  پدارم گردی , پدرام گردی , سراشپز پدرام گردی , پدرام , تیم راه اندازی , ایتالین ساسیج , سایر غذاهای لذیذ ایتالیایی.">
     <meta name="keywords" content="آشپزی ایتالیایی، غذاهای ایتالیایی، پاستا، پیتزا، ریزوتو، تیرامیسو، غذاهای خوشمزه ایتالیایی، دستور پخت ایتالیایی، آشپزی ایتالیا، خوراکی‌های ایتالیایی، غذای ایتالیایی، ترکیب طعم‌های ایتالیایی، غذاهای معروف ایتالیا، طرز تهیه پاستا، طرز تهیه پیتزا، غذاهای سنتی ایتالیا">
     <meta name="author" content="yaldaaghasi85@gmail.com">
     <meta property="og:title" content="پدرام گردی - سرآشپز ایتالیایی">
@@ -27,32 +26,44 @@
             margin: 0;
             padding: 0;
             direction: rtl;
-            background: linear-gradient(to right, #66BB6A, #fff, #F1F1F1); /* پس‌زمینه سبز */
+            background: linear-gradient(to right, #66BB6A, #fff, #F1F1F1);
             color: #333;
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #C62828; /* قرمز پررنگ‌تر */
+            background-color: #C62828;
             color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* سایه برای جذابیت بیشتر */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            letter-spacing: 1px; /* فاصله بین حروف */
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        /* استایل لوگو به عنوان تنها تصویر (پرچم ایتالیا) در پایین هدر */
+        .header-logo {
+            margin-top: 10px;
+        }
+        .header-logo img {
+            max-width: 80px;
+            height: auto;
         }
         section {
             padding: 40px;
             transition: all 0.5s ease-in-out;
         }
         section:hover {
-            background-color: #f1f1f1; /* تغییر پس‌زمینه در حالت هاور */
+            background-color: #f1f1f1;
         }
         .skills, .activities {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px; /* فاصله بیشتر بین بخش‌ها */
+            gap: 20px;
         }
         .skill, .activity {
             width: 30%;
@@ -64,13 +75,13 @@
             transition: all 0.3s ease;
         }
         .skill:hover, .activity:hover {
-            transform: translateY(-10px); /* افکت شناور برای بخش‌ها */
+            transform: translateY(-10px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #C62828; /* قرمز پررنگ‌تر */
+            background-color: #C62828;
             color: white;
         }
         footer a {
@@ -81,18 +92,18 @@
             transition: color 0.3s;
         }
         footer a:hover {
-            color: #FF80AB; /* تغییر رنگ لینک در هاور */
+            color: #FF80AB;
         }
         
         /* اسلایدشو */
         .slider-container {
-            width: 250px; /* اندازه بزرگتر کادر */
-            height: 300px; /* اندازه بزرگتر کادر */
+            width: 250px;
+            height: 300px;
             overflow: hidden;
             position: relative;
             margin: 20px auto;
-            border-radius: 15px; /* گوشه‌های گرد */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* سایه برای جذاب‌تر شدن */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             background-color: #fff;
         }
         .slider-images {
@@ -100,24 +111,23 @@
             transition: opacity 1s ease-in-out;
         }
         .slider-images img {
-            width: 250px; /* تغییر اندازه تصاویر */
-            height: 300px; /* تغییر اندازه تصاویر */
-            object-fit: cover; /* برای اینکه تصاویر به صورت مناسب داخل کادر قرار بگیرند */
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
             opacity: 0;
             display: none;
             transition: opacity 1s ease-in-out;
-            border-radius: 10px; /* گوشه‌های گرد تصاویر */
+            border-radius: 10px;
         }
         .slider-images img.active {
             opacity: 1;
             display: block;
         }
-
-        /* دکمه‌های مختلف */
+        /* دکمه‌ها */
         .btn {
             padding: 10px 20px;
             font-size: 1.2em;
-            background-color: #81C784; /* رنگ پس‌زمینه دکمه سبز */
+            background-color: #81C784;
             color: white;
             border: none;
             border-radius: 5px;
@@ -125,14 +135,12 @@
             transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #66BB6A; /* رنگ روشن‌تر دکمه در هاور */
+            background-color: #66BB6A;
         }
-
-        /* انیمیشن برای تصاویر */
+        /* انیمیشن تصاویر */
         .image-animation {
             animation: fadeIn 1s ease-out;
         }
-
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -143,128 +151,161 @@
                 transform: translateY(0);
             }
         }
+        .navbar-main__brand-logo {
+            max-width: 80px;
+            height: auto;
+        }
+        .navbar-main__brand-text,
+        .navbar-main__brand-logo + span,
+        .navbar-main__side-menu-header {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>پدرام گردی</h1>
-    <p>سرآشپز ایتالیایی حرفه‌ای</p>
-</header>
-
-<section>
-    <h2>درباره من</h2>
-    <p>من پدرام گردی، متولد 7 آذر 1378 در شیراز، سرآشپز حرفه‌ای در حوزه آشپزی ایتالیایی هستم...</p>
-    <img src="images/photo_24_2024-12-31_15-45-34.jpg" alt="Pedram Gordi" style="width: 100%; max-width: 400px; margin: 20px 0; display: block; border-radius: 10px;" class="image-animation">
-</section>
-
-<section>
-    <h2>مهارت‌ها و تخصص‌ها</h2>
-    <div class="skills">
-        <div class="skill">
-            <h3>پیتزاهای ایتالیایی</h3>
-            <p>تخصص در تهیه پیتزاهای ناپولیتنی و سبک‌های مختلف.</p>
+    <header>
+        <h1>پدرام گردی</h1>
+        <p>سرآشپز ایتالیایی حرفه‌ای</p>
+        <div class="header-logo">
+            <!-- فقط پرچم ایتالیا -->
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" loading="lazy" class="navbar-main__brand-logo" alt="پرچم ایتالیا">
         </div>
-        <div class="skill">
-            <h3>پنیرهای دست‌ساز</h3>
-            <p>مهارت در تولید پنیرهای موزارلا، بوراتا، ریکوتا و دیگر پنیرهای اصیل ایتالیایی.</p>
+    </header>
+
+    <section>
+        <h2>درباره من</h2>
+        <p>من پدرام گردی، متولد 7 آذر 1378 در شیراز، سرآشپز حرفه‌ای در حوزه آشپزی ایتالیایی هستم...</p>
+        <img src="images/photo_24_2024-12-31_15-45-34.jpg" alt="Pedram Gordi" style="width: 100%; max-width: 400px; margin: 20px 0; display: block; border-radius: 10px;" class="image-animation">
+    </section>
+
+    <section>
+        <h2>مهارت‌ها و تخصص‌ها</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>پیتزاهای ایتالیایی</h3>
+                <p>تخصص در تهیه پیتزاهای ناپولیتنی و سبک‌های مختلف.</p>
+            </div>
+            <div class="skill">
+                <h3>پنیرهای دست‌ساز</h3>
+                <p>مهارت در تولید پنیرهای موزارلا، بوراتا، ریکوتا و دیگر پنیرهای اصیل ایتالیایی.</p>
+            </div>
+            <div class="skill">
+                <h3>راه اندازی رستوران</h3>
+                <p>متخصص راه اندازی و مدیریت رستوران های ایتالیایی و ملل , با تمرکز بر خلاقیت در طراحی منو , تجربه مشتری , و ارائه اصالت فرهنگی در هر بشقاب</p>
+            </div>
+            <div class="skill">
+                <h3>پاستا</h3>
+                <p>تهیه انواع پاستاهای رشته‌ای و فلینگ دار با دستورهای خاص و خلاقانه.</p>
+            </div>
         </div>
-        <div class="skill">
-            <h3>راه اندازی رستوران</h3>
-            <p>متخصص راه اندازی و مدیریت رستوران های ایتالیایی و ملل , با تمرکز بر خلاقیت در طراحی منو , تجربه مشتری , و ارائه اصالت فرهنگی در هر بشقاب</p>
+    </section>
+
+    <section>
+        <h2>فعالیت‌ها</h2>
+        <p>فعالیت‌های من شامل تولید محتوای آموزشی و خلاقانه در فضای مجازی است...</p>
+    </section>
+
+    <section>
+        <h2>چرا این سایت؟</h2>
+        <p>این وب‌سایت فضایی است برای نمایش مهارت‌ها، ارائه دستورهای غذایی و ایجاد ارتباط با افرادی که به هنر آشپزی و مدیریت پروژه‌های رستورانی علاقه‌مند هستند.</p>
+    </section>
+
+    <section>
+        <h2>در تماس باشید</h2>
+        <p>اگر به دنبال یادگیری، دریافت مشاوره، یا همکاری در پروژه‌های خاص هستید، خوشحال می‌شوم با شما در ارتباط باشم.</p>
+        <ul>
+            <li>شماره تماس: +989175671405</li>
+            <li>کانال یوتیوب: <a href="https://www.youtube.com/c/PedramGordi">PedramGordi</a></li>
+            <li>پیج اینستاگرام: <a href="https://www.instagram.com/pedram_gordi">pedram_gordi</a></li>
+            <li>جیمیل: pedramgordi5@gmail.com</li>
+        </ul>
+    </section>
+
+    <!-- اسلایدشو -->
+    <section>
+        <div class="slider-container">
+            <div class="slider-images">
+                <img src="images/photo_1_2024-12-31_15-45-34.jpg" alt="photo 1">
+                <img src="images/photo_2_2024-12-31_15-45-34.jpg" alt="photo 2">
+                <img src="images/photo_3_2024-12-31_15-45-34.jpg" alt="photo 3">
+                <img src="images/photo_4_2024-12-31_15-45-34.jpg" alt="photo 4">
+                <img src="images/photo_5_2024-12-31_15-45-34.jpg" alt="photo 5">
+                <img src="images/photo_6_2024-12-31_15-45-34.jpg" alt="photo 6">
+                <img src="images/photo_7_2024-12-31_15-45-34.jpg" alt="photo 7">
+                <img src="images/photo_8_2024-12-31_15-45-34.jpg" alt="photo 8">
+                <img src="images/photo_9_2024-12-31_15-45-34.jpg" alt="photo 9">
+                <img src="images/photo_10_2024-12-31_15-45-34.jpg" alt="photo 10">
+                <img src="images/photo_11_2024-12-31_15-45-34.jpg" alt="photo 11">
+                <img src="images/photo_13_2024-12-31_15-45-34.jpg" alt="photo 13">
+                <img src="images/photo_14_2024-12-31_15-45-34.jpg" alt="photo 14">
+                <img src="images/photo_15_2024-12-31_15-45-34.jpg" alt="photo 15">
+                <img src="images/photo_16_2024-12-31_15-45-34.jpg" alt="photo 16">
+                <img src="images/photo_17_2024-12-31_15-45-34.jpg" alt="photo 17">
+                <img src="images/photo_18_2024-12-31_15-45-34.jpg" alt="photo 18">
+                <img src="images/photo_19_2024-12-31_15-45-34.jpg" alt="photo 19">
+                <img src="images/photo_20_2024-12-31_15-45-34.jpg" alt="photo 20">
+                <img src="images/photo_21_2024-12-31_15-45-34.jpg" alt="photo 21">
+                <img src="images/photo_22_2024-12-31_15-45-34.jpg" alt="photo 22">
+                <img src="images/photo_23_2024-12-31_15-45-34.jpg" alt="photo 23">
+                <img src="images/photo_24_2024-12-31_15-45-34.jpg" alt="photo 24">
+                <img src="images/photo_25_2024-12-31_15-45-34.jpg" alt="photo 25">
+                <img src="images/photo_26_2024-12-31_15-45-34.jpg" alt="photo 26">
+                <img src="images/photo_27_2024-12-31_15-45-34.jpg" alt="photo 27">
+                <img src="images/photo_28_2024-12-31_15-45-34.jpg" alt="photo 28">
+                <img src="images/photo_29_2024-12-31_15-45-34.jpg" alt="photo 29">
+                <img src="images/photo_30_2024-12-31_15-45-34.jpg" alt="photo 30">
+                <img src="images/photo_31_2024-12-31_15-45-34.jpg" alt="photo 31">
+                <img src="images/photo_32_2024-12-31_15-45-34.jpg" alt="photo 32">
+                <img src="images/photo_33_2024-12-31_15-45-34.jpg" alt="photo 33">
+                <img src="images/photo_34_2024-12-31_15-45-34.jpg" alt="photo 34">
+                <img src="images/photo_35_2024-12-31_15-45-34.jpg" alt="photo 35">
+            </div>
         </div>
-        <div class="skill">
-            <h3>پاستا</h3>
-            <p>تهیه انواع پاستاهای رشته‌ای و فلینگ دار با دستورهای خاص و خلاقانه.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 تمامی حقوق محفوظ است.</p>
+        <div>
+            <button class="btn">درباره ما</button>
+            <button class="btn">تماس با ما</button>
         </div>
-    </div>
-</section>
+    </footer>
 
-<section>
-    <h2>فعالیت‌ها</h2>
-    <p>فعالیت‌های من شامل تولید محتوای آموزشی و خلاقانه در فضای مجازی است...</p>
-</section>
+    <script>
+        const images = document.querySelectorAll(".slider-images img");
+        let currentIndex = 0;
+        function changeImage() {
+            images[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add("active");
+        }
+        setInterval(changeImage, 3000);
+    </script>
 
-<section>
-    <h2>چرا این سایت؟</h2>
-    <p>این وب‌سایت فضایی است برای نمایش مهارت‌ها، ارائه دستورهای غذایی و ایجاد ارتباط با افرادی که به هنر آشپزی و مدیریت پروژه‌های رستورانی علاقه‌مند هستند.</p>
-</section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelectorAll('*').forEach(function(el) {
+                el.childNodes.forEach(function(node) {
+                    if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() === "ITALIA.IT") {
+                        node.textContent = "";
+                    }
+                });
+            });
+        });
+    </script>
 
-<section>
-    <h2>در تماس باشید</h2>
-    <p>اگر به دنبال یادگیری، دریافت مشاوره، یا همکاری در پروژه‌های خاص هستید، خوشحال می‌شوم با شما در ارتباط باشم.</p>
-    <ul>
-        <li>شماره تماس: +989175671405</li>
-        <li>کانال یوتیوب: <a href="https://www.youtube.com/c/PedramGordi">PedramGordi</a></li>
-        <li>پیج اینستاگرام: <a href="https://www.instagram.com/pedram_gordi">pedram_gordi</a></li>
-        <li>جیمیل: pedramgordi5@gmail.com</li>
-    </ul>
-</section>
-
-<!-- اسلایدشو -->
-<section>
-    <div class="slider-container">
-        <div class="slider-images">
-            <!-- تصاویر 35 تایی -->
-            <img src="images/photo_1_2024-12-31_15-45-34.jpg" alt="photo 1">
-            <img src="images/photo_2_2024-12-31_15-45-34.jpg" alt="photo 2">
-            <img src="images/photo_3_2024-12-31_15-45-34.jpg" alt="photo 3">
-            <img src="images/photo_4_2024-12-31_15-45-34.jpg" alt="photo 4">
-            <img src="images/photo_5_2024-12-31_15-45-34.jpg" alt="photo 5">
-            <img src="images/photo_6_2024-12-31_15-45-34.jpg" alt="photo 6">
-            <img src="images/photo_7_2024-12-31_15-45-34.jpg" alt="photo 7">
-            <img src="images/photo_8_2024-12-31_15-45-34.jpg" alt="photo 8">
-            <img src="images/photo_9_2024-12-31_15-45-34.jpg" alt="photo 9">
-            <img src="images/photo_10_2024-12-31_15-45-34.jpg" alt="photo 10">
-            <img src="images/photo_11_2024-12-31_15-45-34.jpg" alt="photo 11">
-            <img src="images/photo_13_2024-12-31_15-45-34.jpg" alt="photo 13">
-            <img src="images/photo_14_2024-12-31_15-45-34.jpg" alt="photo 14">
-            <img src="images/photo_15_2024-12-31_15-45-34.jpg" alt="photo 15">
-            <img src="images/photo_16_2024-12-31_15-45-34.jpg" alt="photo 16">
-            <img src="images/photo_17_2024-12-31_15-45-34.jpg" alt="photo 17">
-            <img src="images/photo_18_2024-12-31_15-45-34.jpg" alt="photo 18">
-            <img src="images/photo_19_2024-12-31_15-45-34.jpg" alt="photo 19">
-            <img src="images/photo_20_2024-12-31_15-45-34.jpg" alt="photo 20">
-            <img src="images/photo_21_2024-12-31_15-45-34.jpg" alt="photo 21">
-            <img src="images/photo_22_2024-12-31_15-45-34.jpg" alt="photo 22">
-            <img src="images/photo_23_2024-12-31_15-45-34.jpg" alt="photo 23">
-            <img src="images/photo_24_2024-12-31_15-45-34.jpg" alt="photo 24">
-            <img src="images/photo_25_2024-12-31_15-45-34.jpg" alt="photo 25">
-            <img src="images/photo_26_2024-12-31_15-45-34.jpg" alt="photo 26">
-            <img src="images/photo_27_2024-12-31_15-45-34.jpg" alt="photo 27">
-            <img src="images/photo_28_2024-12-31_15-45-34.jpg" alt="photo 28">
-            <img src="images/photo_29_2024-12-31_15-45-34.jpg" alt="photo 29">
-            <img src="images/photo_30_2024-12-31_15-45-34.jpg" alt="photo 30">
-            <img src="images/photo_31_2024-12-31_15-45-34.jpg" alt="photo 31">
-            <img src="images/photo_32_2024-12-31_15-45-34.jpg" alt="photo 32">
-            <img src="images/photo_33_2024-12-31_15-45-34.jpg" alt="photo 33">
-            <img src="images/photo_34_2024-12-31_15-45-34.jpg" alt="photo 34">
-            <img src="images/photo_35_2024-12-31_15-45-34.jpg" alt="photo 35">
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 تمامی حقوق محفوظ است.</p>
-    <div>
-        <button class="btn">درباره ما</button>
-        <button class="btn">تماس با ما</button>
-    </div>
-</footer>
-
-<script>
-    // اسکریپت اسلایدشو
-    const images = document.querySelectorAll(".slider-images img");
-    let currentIndex = 0;
-
-    function changeImage() {
-        images[currentIndex].classList.remove("active");
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add("active");
-    }
-
-    setInterval(changeImage, 3000); // تغییر تصویر هر 3 ثانیه
-</script>
-
+    <script>
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === Node.TEXT_NODE && node.textContent.includes("ITALIA.IT")) {
+                        node.textContent = node.textContent.replace("ITALIA.IT", "");
+                    }
+                });
+            });
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
 </body>
 </html>
