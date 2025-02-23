@@ -68,15 +68,20 @@
         .skill, .activity {
             width: 30%;
             margin: 10px;
-            background-color: #fff;
+            border-style: dashed;
+            background-color: #acf49856;
             padding: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            border-radius: 50px;
             transition: all 0.3s ease;
+        }
+        .skill:active{
+            background-color: transparent;
         }
         .skill:hover, .activity:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
         footer {
             text-align: center;
@@ -92,17 +97,19 @@
             transition: color 0.3s;
         }
         footer a:hover {
-            color: #FF80AB;
+            color: #ffffff;
         }
         
         /* اسلایدشو */
         .slider-container {
             width: 250px;
             height: 300px;
+            /* border: #000000; */
+            /* border-style: solid; */
             overflow: hidden;
             position: relative;
             margin: 20px auto;
-            border-radius: 15px;
+            border-radius: 50px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             background-color: #fff;
         }
@@ -126,16 +133,26 @@
         /* دکمه‌ها */
         .btn {
             padding: 10px 20px;
+            /* height: 100px; */
+            /* width: 300px; */
             font-size: 1.2em;
             background-color: #81C784;
             color: white;
-            border: none;
-            border-radius: 5px;
+            border: white;
+            border-width:2px;
+            border-style:solid;
+            border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #66BB6A;
+            opacity: 0.9;
+        }
+        .btn:active{
+            background-color: white;
+            color: #81C784;
+            border-color: #81C784;
+            
         }
         /* انیمیشن تصاویر */
         .image-animation {
@@ -160,6 +177,10 @@
         .navbar-main__side-menu-header {
             display: none !important;
         }
+        .call{
+            font-size: 18px;
+            font-weight: 370;
+        }
     </style>
 </head>
 <body>
@@ -176,7 +197,8 @@
     <section>
         <h2>درباره من</h2>
         <p>من پدرام گردی، متولد 7 آذر 1378 در شیراز، سرآشپز حرفه‌ای در حوزه آشپزی ایتالیایی هستم...</p>
-        <img src="images/photo_24_2024-12-31_15-45-34.jpg" alt="Pedram Gordi" style="width: 100%; max-width: 400px; margin: 20px 0; display: block; border-radius: 10px;" class="image-animation">
+        <img src="images/photo_24_2024-12-31_15-45-34.jpg" alt="Pedram Gordi" style="width: 100%; max-width: 200px; margin: 20px 0; display: block; border-radius: 40px;" class="image-animation">
+        <!-- <img src="images/photo_26_2024-12-31_15-45-34.jpg" alt="Pedram Gordi" style="width: 100%; max-width: 200px; margin: 20px 0; display: block; border-radius: 40px;" class="image-animation"> -->
     </section>
 
     <section>
@@ -214,11 +236,11 @@
     <section>
         <h2>در تماس باشید</h2>
         <p>اگر به دنبال یادگیری، دریافت مشاوره، یا همکاری در پروژه‌های خاص هستید، خوشحال می‌شوم با شما در ارتباط باشم.</p>
-        <ul>
-            <li>شماره تماس: +989175671405</li>
-            <li>کانال یوتیوب: <a href="https://www.youtube.com/c/PedramGordi">PedramGordi</a></li>
-            <li>پیج اینستاگرام: <a href="https://www.instagram.com/pedram_gordi">pedram_gordi</a></li>
-            <li>جیمیل: pedramgordi5@gmail.com</li>
+        <ul class="call">
+            <a href="tel:+989123456789">phone number : +98 912 345 6789</a>
+            <li> youtube : <a href="https://www.youtube.com/c/PedramGordi">PedramGordi</a></li>
+            <li> instagram : <a href="https://www.instagram.com/pedram_gordi">pedram_gordi</a></li>
+            <li>Gmail : pedramgordi5@gmail.com</li>
         </ul>
     </section>
 
@@ -265,12 +287,13 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 تمامی حقوق محفوظ است.</p>
+        <p>&copy; All rights reserved 2025</p>
         <div>
-            <button class="btn">درباره ما</button>
-            <button class="btn">تماس با ما</button>
+            <!-- <button class="btn">about us</button> -->
+            <a href="tel:+989123456789" class="btn">call with us</a>
         </div>
     </footer>
+    
 
     <script>
         const images = document.querySelectorAll(".slider-images img");
